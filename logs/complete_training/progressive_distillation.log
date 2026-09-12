@@ -1,0 +1,45 @@
+[01:01:08] [INFO] 
+================================================================================
+[01:01:08] [INFO] PROGRESSIVE DISTILLATION
+[01:01:08] [INFO] ================================================================================
+[01:01:08] [INFO] 
+--- Stage 1: reusing already-trained student (skipping retrain) ---
+[01:01:15] [INFO] [OK] Stage 1 Accuracy: 0.7814
+[01:01:15] [INFO] 
+--- Stage 2: Student -> Student 2 ---
+[01:01:15] [INFO] 
+Training MESSy Student 'progressive_stage2' (8 epochs)
+[01:02:54] [INFO] Epoch 1: Loss=1.0742, Train Acc=0.2942, Val Acc=0.5564, Val F1=0.5407
+[01:02:54] [INFO] [OK] New best student (progressive_stage2): 0.5564
+[01:04:27] [INFO] Epoch 2: Loss=0.6811, Train Acc=0.5243, Val Acc=0.6644, Val F1=0.6570
+[01:04:27] [INFO] [OK] New best student (progressive_stage2): 0.6644
+[01:06:00] [INFO] Epoch 3: Loss=0.5737, Train Acc=0.5982, Val Acc=0.7082, Val F1=0.7034
+[01:06:00] [INFO] [OK] New best student (progressive_stage2): 0.7082
+[01:07:40] [INFO] Epoch 4: Loss=0.5389, Train Acc=0.6298, Val Acc=0.7300, Val F1=0.7277
+[01:07:40] [INFO] [OK] New best student (progressive_stage2): 0.7300
+[01:09:13] [INFO] Epoch 5: Loss=0.5028, Train Acc=0.6573, Val Acc=0.7348, Val F1=0.7336
+[01:09:13] [INFO] [OK] New best student (progressive_stage2): 0.7348
+[01:10:45] [INFO] Epoch 6: Loss=0.4954, Train Acc=0.6680, Val Acc=0.7530, Val F1=0.7506
+[01:10:45] [INFO] [OK] New best student (progressive_stage2): 0.7530
+[01:12:23] [INFO] Epoch 7: Loss=0.4803, Train Acc=0.6795, Val Acc=0.7528, Val F1=0.7511
+[01:13:57] [INFO] Epoch 8: Loss=0.4671, Train Acc=0.6896, Val Acc=0.7554, Val F1=0.7534
+[01:13:57] [INFO] [OK] New best student (progressive_stage2): 0.7554
+[01:13:58] [INFO] [OK] Student (progressive_stage2) best accuracy: 0.7554
+[01:14:05] [INFO] [OK] Stage 2 Accuracy: 0.7578
+[01:14:05] [INFO] 
+--- Stage 3: Student 2 -> Student 3 ---
+[01:14:05] [INFO] 
+Training MESSy Student 'progressive_stage3' (6 epochs)
+[01:15:39] [INFO] Epoch 1: Loss=1.1384, Train Acc=0.2512, Val Acc=0.5372, Val F1=0.5183
+[01:15:39] [INFO] [OK] New best student (progressive_stage3): 0.5372
+[01:17:18] [INFO] Epoch 2: Loss=0.7097, Train Acc=0.5018, Val Acc=0.6368, Val F1=0.6314
+[01:17:18] [INFO] [OK] New best student (progressive_stage3): 0.6368
+[01:18:51] [INFO] Epoch 3: Loss=0.6048, Train Acc=0.5728, Val Acc=0.6858, Val F1=0.6805
+[01:18:52] [INFO] [OK] New best student (progressive_stage3): 0.6858
+[01:20:30] [INFO] Epoch 4: Loss=0.5744, Train Acc=0.6012, Val Acc=0.7058, Val F1=0.7009
+[01:20:30] [INFO] [OK] New best student (progressive_stage3): 0.7058
+[01:22:10] [INFO] Epoch 5: Loss=0.5372, Train Acc=0.6306, Val Acc=0.7248, Val F1=0.7222
+[01:22:10] [INFO] [OK] New best student (progressive_stage3): 0.7248
+[01:23:44] [INFO] Epoch 6: Loss=0.5175, Train Acc=0.6445, Val Acc=0.7232, Val F1=0.7196
+[01:23:45] [INFO] [OK] Student (progressive_stage3) best accuracy: 0.7248
+[01:23:52] [INFO] [OK] Stage 3 Accuracy: 0.7210

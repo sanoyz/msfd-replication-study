@@ -1,0 +1,17 @@
+[21:59:19] [INFO] 
+================================================================================
+[21:59:19] [INFO] STANDARD KNOWLEDGE DISTILLATION
+[21:59:19] [INFO] ================================================================================
+[22:00:45] [INFO] Epoch 1: Val Acc=0.1950, Val F1=0.1565
+[22:02:14] [INFO] Epoch 2: Val Acc=0.5524, Val F1=0.5314
+[22:03:40] [INFO] Epoch 3: Val Acc=0.6536, Val F1=0.6448
+[22:05:09] [INFO] Epoch 4: Val Acc=0.6864, Val F1=0.6811
+[22:06:38] [INFO] Epoch 5: Val Acc=0.7140, Val F1=0.7122
+[22:08:04] [INFO] Epoch 6: Val Acc=0.7296, Val F1=0.7295
+[22:09:33] [INFO] Epoch 7: Val Acc=0.7408, Val F1=0.7397
+[22:11:03] [INFO] Epoch 8: Val Acc=0.7518, Val F1=0.7502
+[22:12:31] [INFO] Epoch 9: Val Acc=0.7586, Val F1=0.7578
+[22:14:01] [INFO] Epoch 10: Val Acc=0.7578, Val F1=0.7560
+[22:15:30] [INFO] Epoch 11: Val Acc=0.7626, Val F1=0.7617
+[22:16:58] [INFO] Epoch 12: Val Acc=0.7658, Val F1=0.7655
+[22:16:59] [INFO] [OK] Standard KD best accuracy: 0.7658

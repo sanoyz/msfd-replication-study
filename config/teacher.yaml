@@ -1,0 +1,6 @@
+# Teacher training configuration
+teacher_epochs: 10
+teacher_lr: 1.0e-4
+freeze_teacher_backbone_except_last_n_blocks: 4
+use_teacher_feature_cache: true
+cache_batch_size: 64

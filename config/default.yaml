@@ -1,0 +1,37 @@
+# Default configuration for MSFD replication (complete training pipeline)
+# Convert to Config dataclass via code/config.py
+
+# Data
+dataset: cifar100
+num_classes: 100
+img_size: 224
+batch_size: 32
+accumulation_steps: 4
+
+# Epochs
+teacher_epochs: 10
+student_epochs: 12
+practice_rounds: 1
+ablation_epochs: 4
+
+# Optimization
+teacher_lr: 1.0e-4
+student_lr: 3.0e-4
+practice_lr: 1.0e-5
+weight_decay: 1.0e-4
+gradient_clip: 1.0
+use_amp: true
+
+# Distillation
+distill_weight: 0.7
+ce_weight: 0.3
+temperature: 1.0  # tuned by KD sweep
+
+# Deliberate practice
+hard_example_threshold: 0.6
+augmentations_per_sample: 2
+
+# Statistics
+num_seeds: 5
+seed: 42
+seed_stride: 97

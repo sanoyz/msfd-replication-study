@@ -1,0 +1,29 @@
+[20:18:45] [INFO] 
+============================================================
+[20:18:45] [INFO] STEP 3: DELIBERATE PRACTICE
+[20:18:45] [INFO] ============================================================
+[20:18:45] [INFO] 
+--- Round 1/1 ---
+[20:18:45] [INFO] 
+================================================================================
+[20:18:45] [INFO] IMPROVED DELIBERATE PRACTICE
+[20:18:45] [INFO] ================================================================================
+[20:19:56] [INFO] Found 11895 hard examples
+[20:19:56] [INFO] Generating 2 augmentations per sample...
+[20:23:17] [INFO] Created 23790 augmented samples
+[20:23:17] [INFO] 
+Training MESSy Student 'practice_fast' (2 epochs)
+[20:25:26] [INFO] Epoch 1: Loss=1.0683, Train Acc=0.2447, Val Acc=0.7126, Val F1=0.7110
+[20:25:26] [INFO] [OK] New best student (practice_fast): 0.7126
+[20:27:25] [INFO] Epoch 2: Loss=1.0169, Train Acc=0.2648, Val Acc=0.7180, Val F1=0.7174
+[20:27:25] [INFO] [OK] New best student (practice_fast): 0.7180
+[20:27:25] [INFO] [OK] Student (practice_fast) best accuracy: 0.7180
+[20:27:25] [INFO] Fine-tuning on full dataset...
+[20:27:25] [INFO] 
+Training MESSy Student 'practice_finetune' (3 epochs)
+[20:28:58] [INFO] Epoch 1: Loss=0.5094, Train Acc=0.7238, Val Acc=0.7852, Val F1=0.7840
+[20:28:58] [INFO] [OK] New best student (practice_finetune): 0.7852
+[20:30:30] [INFO] Epoch 2: Loss=0.4813, Train Acc=0.7404, Val Acc=0.7886, Val F1=0.7875
+[20:30:30] [INFO] [OK] New best student (practice_finetune): 0.7886
+[20:32:01] [INFO] Epoch 3: Loss=0.4932, Train Acc=0.7361, Val Acc=0.7862, Val F1=0.7845
+[20:32:02] [INFO] [OK] Student (practice_finetune) best accuracy: 0.7886

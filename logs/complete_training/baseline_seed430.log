@@ -1,0 +1,20 @@
+# Source: KD sweep run, 2026-09-08, STEP 2: BASELINE (NO DISTILLATION)
+# 12 epochs. Best val = 0.7794, test acc = 0.7731.
+
+[20:15:54] [INFO] 
+Seed 430:
+[20:15:54] [INFO]   Training Baseline 'baseline_seed430' (12 epochs)
+[20:17:20] [INFO]     Epoch 1: Val Acc=0.5686
+[20:18:45] [INFO]     Epoch 2: Val Acc=0.6700
+[20:20:09] [INFO]     Epoch 3: Val Acc=0.7014
+[20:21:35] [INFO]     Epoch 4: Val Acc=0.7242
+[20:22:57] [INFO]     Epoch 5: Val Acc=0.7370
+[20:24:23] [INFO]     Epoch 6: Val Acc=0.7566
+[20:25:46] [INFO]     Epoch 7: Val Acc=0.7598
+[20:27:12] [INFO]     Epoch 8: Val Acc=0.7756
+[20:28:39] [INFO]     Epoch 9: Val Acc=0.7732
+[20:30:02] [INFO]     Epoch 10: Val Acc=0.7770
+[20:31:28] [INFO]     Epoch 11: Val Acc=0.7746
+[20:32:51] [INFO]     Epoch 12: Val Acc=0.7794
+[20:32:51] [INFO]     Best val acc: 0.7794
+[20:33:02] [INFO]   Seed 430: Test Acc=0.7731

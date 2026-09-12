@@ -1,0 +1,13 @@
+[14:40:37] [INFO] 
+[1/12] Testing KD: T=1.0, α=0.3
+[14:40:37] [INFO]   Training KD 'kd_sweep_T1.0_a0.3': T=1.0, α=0.3 (6 epochs)
+[14:44:29] [INFO]     Epoch 1: Val Acc=0.5988
+[14:48:09] [INFO]     Epoch 2: Val Acc=0.6774
+[14:51:50] [INFO]     Epoch 3: Val Acc=0.7180
+[14:55:31] [INFO]     Epoch 4: Val Acc=0.7358
+[14:59:11] [INFO]     Epoch 5: Val Acc=0.7482
+[15:02:52] [INFO]     Epoch 6: Val Acc=0.7520
+[15:02:52] [INFO]     Best val acc: 0.7520
+[15:02:59] [INFO]     Val Acc=0.7508
+[15:02:59] [INFO]   Result: T=1.0, α=0.3 → 75.08%
+[15:02:59] [INFO]   ✓ New best (validation): 75.08%

@@ -1,0 +1,5 @@
+[19:18:57] [INFO] 
+============================================================
+[19:18:57] [INFO] BUILDING TEACHER FEATURE CACHE
+[19:18:57] [INFO] ============================================================
+[19:24:18] [INFO] [CACHE] Built teacher feature cache for 45000 samples (keys: ['visual', 'audio', 'three_d'], logits: True)

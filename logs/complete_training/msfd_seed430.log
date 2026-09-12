@@ -1,0 +1,10 @@
+# NO PER-EPOCH TRAINING TEXT AVAILABLE IN SOURCE LOGS.
+#
+# The CRYSTAL COMPLETE run (2026-09-06) trained only seeds [42, 139, 236].
+# The RESUME run (2026-09-09) found seed 430 already completed on disk and
+# evaluated its checkpoint without retraining. The only recorded numbers are:
+#
+#   Seed 430 (completed): Test Acc=0.7767, Test F1=0.7755
+#
+# If the original msfd_seed430_best.pth / training log exists elsewhere
+# (Kaggle notebook output, Zenodo), paste it here.

@@ -1,0 +1,27 @@
+[18:30:11] [INFO] 
+============================================================
+[18:30:11] [INFO] STEP 1: TRAIN TEACHER
+[18:30:11] [INFO] ============================================================
+[18:30:15] [INFO] Teacher parameters: 92,543,332
+[18:30:15] [INFO] 
+Training Teacher (10 epochs)
+[18:30:15] [INFO] [FREEZE] ViT backbone: last 4 of 12 blocks trainable (35,097,700/92,543,332 params trainable, 37.9%)
+[18:35:00] [INFO] Epoch 1: Loss=4.2612, Train Acc=0.1020, Val Acc=0.3074, Val F1=0.2544
+[18:35:00] [INFO] [OK] New best teacher: 0.3074
+[18:39:52] [INFO] Epoch 2: Loss=2.3527, Train Acc=0.4577, Val Acc=0.7610, Val F1=0.7579
+[18:39:53] [INFO] [OK] New best teacher: 0.7610
+[18:44:45] [INFO] Epoch 3: Loss=1.5151, Train Acc=0.6783, Val Acc=0.8010, Val F1=0.7998
+[18:44:45] [INFO] [OK] New best teacher: 0.8010
+[18:49:37] [INFO] Epoch 4: Loss=1.3272, Train Acc=0.7319, Val Acc=0.8244, Val F1=0.8212
+[18:49:38] [INFO] [OK] New best teacher: 0.8244
+[18:54:30] [INFO] Epoch 5: Loss=1.1781, Train Acc=0.7706, Val Acc=0.8426, Val F1=0.8423
+[18:54:30] [INFO] [OK] New best teacher: 0.8426
+[18:59:23] [INFO] Epoch 6: Loss=1.1135, Train Acc=0.7912, Val Acc=0.8446, Val F1=0.8433
+[18:59:24] [INFO] [OK] New best teacher: 0.8446
+[19:04:16] [INFO] Epoch 7: Loss=1.0365, Train Acc=0.8105, Val Acc=0.8540, Val F1=0.8540
+[19:04:16] [INFO] [OK] New best teacher: 0.8540
+[19:09:09] [INFO] Epoch 8: Loss=0.9676, Train Acc=0.8283, Val Acc=0.8494, Val F1=0.8493
+[19:14:01] [INFO] Epoch 9: Loss=0.9518, Train Acc=0.8347, Val Acc=0.8586, Val F1=0.8581
+[19:14:02] [INFO] [OK] New best teacher: 0.8586
+[19:18:55] [INFO] Epoch 10: Loss=0.9087, Train Acc=0.8447, Val Acc=0.8580, Val F1=0.8575
+[19:18:57] [INFO] [OK] Teacher best accuracy: 0.8586

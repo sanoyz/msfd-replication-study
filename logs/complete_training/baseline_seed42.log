@@ -1,0 +1,28 @@
+[20:32:03] [INFO] 
+--- 4.0 No-Distillation Baseline ---
+[20:32:03] [INFO] 
+Training No-Distillation Baseline 'baseline_seed42' (12 epochs)
+[20:33:30] [INFO] Epoch 1: Loss=4.4629, Train Acc=0.0701, Val Acc=0.1918, Val F1=0.1457
+[20:33:30] [INFO] [OK] New best baseline (baseline_seed42): 0.1918
+[20:34:55] [INFO] Epoch 2: Loss=2.9660, Train Acc=0.3231, Val Acc=0.5352, Val F1=0.5146
+[20:34:55] [INFO] [OK] New best baseline (baseline_seed42): 0.5352
+[20:36:20] [INFO] Epoch 3: Loss=2.0866, Train Acc=0.5017, Val Acc=0.6482, Val F1=0.6420
+[20:36:20] [INFO] [OK] New best baseline (baseline_seed42): 0.6482
+[20:37:45] [INFO] Epoch 4: Loss=1.8297, Train Acc=0.5767, Val Acc=0.6968, Val F1=0.6946
+[20:37:45] [INFO] [OK] New best baseline (baseline_seed42): 0.6968
+[20:39:10] [INFO] Epoch 5: Loss=1.6639, Train Acc=0.6196, Val Acc=0.7240, Val F1=0.7192
+[20:39:10] [INFO] [OK] New best baseline (baseline_seed42): 0.7240
+[20:40:36] [INFO] Epoch 6: Loss=1.5875, Train Acc=0.6474, Val Acc=0.7448, Val F1=0.7426
+[20:40:36] [INFO] [OK] New best baseline (baseline_seed42): 0.7448
+[20:42:01] [INFO] Epoch 7: Loss=1.5037, Train Acc=0.6704, Val Acc=0.7512, Val F1=0.7483
+[20:42:01] [INFO] [OK] New best baseline (baseline_seed42): 0.7512
+[20:43:26] [INFO] Epoch 8: Loss=1.4263, Train Acc=0.6914, Val Acc=0.7620, Val F1=0.7595
+[20:43:26] [INFO] [OK] New best baseline (baseline_seed42): 0.7620
+[20:44:51] [INFO] Epoch 9: Loss=1.3949, Train Acc=0.7028, Val Acc=0.7702, Val F1=0.7692
+[20:44:51] [INFO] [OK] New best baseline (baseline_seed42): 0.7702
+[20:46:18] [INFO] Epoch 10: Loss=1.3358, Train Acc=0.7181, Val Acc=0.7746, Val F1=0.7731
+[20:46:18] [INFO] [OK] New best baseline (baseline_seed42): 0.7746
+[20:47:46] [INFO] Epoch 11: Loss=1.2874, Train Acc=0.7304, Val Acc=0.7740, Val F1=0.7726
+[20:49:13] [INFO] Epoch 12: Loss=1.3369, Train Acc=0.7193, Val Acc=0.7758, Val F1=0.7741
+[20:49:13] [INFO] [OK] New best baseline (baseline_seed42): 0.7758
+[20:49:13] [INFO] [OK] Baseline (baseline_seed42) best accuracy: 0.7758

@@ -1,0 +1,15 @@
+# The MSFD CRYSTAL COMPLETE run (2026-09-06) trained seeds [42, 139, 236] only.
+# Seed 333 was trained in a separate session whose per-epoch output was not
+# preserved; the MSFD resume run (2026-09-09) re-evaluated the saved
+# checkpoint and logged the final metrics below.
+
+[21:07:29] [INFO]   Seed 333 (completed): Test Acc=0.7761, Test F1=0.7751
+
+[21:07:42] [INFO]   Seed 333: 0.7761 (0.7751)
+
+# Aggregate reported by the same resume run (all five seeds):
+[21:07:42] [INFO] MSFD Test Accuracy:
+[21:07:42] [INFO]   mean = 77.45%
+[21:07:42] [INFO]   std  = 0.25%
+[21:07:42] [INFO]   95% CI = [77.23%, 77.67%]
+[21:07:42] [INFO]   n    = 5

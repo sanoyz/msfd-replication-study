@@ -1,0 +1,26 @@
+[19:42:21] [INFO] 
+Training MESSy Student 'messy_seed139' (12 epochs)
+[19:43:51] [INFO] Epoch 1: Loss=1.1580, Train Acc=0.3300, Val Acc=0.5822, Val F1=0.5641
+[19:43:51] [INFO] [OK] New best student (messy_seed139): 0.5822
+[19:45:20] [INFO] Epoch 2: Loss=0.7735, Train Acc=0.5433, Val Acc=0.6776, Val F1=0.6725
+[19:45:21] [INFO] [OK] New best student (messy_seed139): 0.6776
+[19:46:52] [INFO] Epoch 3: Loss=0.6848, Train Acc=0.6036, Val Acc=0.7098, Val F1=0.7075
+[19:46:52] [INFO] [OK] New best student (messy_seed139): 0.7098
+[19:48:21] [INFO] Epoch 4: Loss=0.6326, Train Acc=0.6384, Val Acc=0.7328, Val F1=0.7314
+[19:48:21] [INFO] [OK] New best student (messy_seed139): 0.7328
+[19:49:51] [INFO] Epoch 5: Loss=0.5896, Train Acc=0.6655, Val Acc=0.7462, Val F1=0.7450
+[19:49:51] [INFO] [OK] New best student (messy_seed139): 0.7462
+[19:51:22] [INFO] Epoch 6: Loss=0.5704, Train Acc=0.6798, Val Acc=0.7506, Val F1=0.7489
+[19:51:22] [INFO] [OK] New best student (messy_seed139): 0.7506
+[19:52:51] [INFO] Epoch 7: Loss=0.5477, Train Acc=0.6945, Val Acc=0.7688, Val F1=0.7681
+[19:52:51] [INFO] [OK] New best student (messy_seed139): 0.7688
+[19:54:21] [INFO] Epoch 8: Loss=0.5103, Train Acc=0.7205, Val Acc=0.7738, Val F1=0.7728
+[19:54:21] [INFO] [OK] New best student (messy_seed139): 0.7738
+[19:55:49] [INFO] Epoch 9: Loss=0.5090, Train Acc=0.7240, Val Acc=0.7758, Val F1=0.7755
+[19:55:49] [INFO] [OK] New best student (messy_seed139): 0.7758
+[19:57:19] [INFO] Epoch 10: Loss=0.4988, Train Acc=0.7291, Val Acc=0.7802, Val F1=0.7799
+[19:57:19] [INFO] [OK] New best student (messy_seed139): 0.7802
+[19:58:48] [INFO] Epoch 11: Loss=0.4991, Train Acc=0.7303, Val Acc=0.7794, Val F1=0.7791
+[20:00:19] [INFO] Epoch 12: Loss=0.5022, Train Acc=0.7297, Val Acc=0.7826, Val F1=0.7820
+[20:00:19] [INFO] [OK] New best student (messy_seed139): 0.7826
+[20:00:19] [INFO] [OK] Student (messy_seed139) best accuracy: 0.7826

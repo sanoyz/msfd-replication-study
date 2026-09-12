@@ -1,0 +1,20 @@
+# Source: KD sweep run, 2026-09-08, STEP 3: BEST KD
+# Config: T=1.0, alpha=0.3, 12 epochs. Best val = 0.7908, test acc = 0.7833.
+
+[23:30:59] [INFO] 
+Seed 430:
+[23:30:59] [INFO]   Training KD 'kd_winner_seed430': T=1.0, α=0.3 (12 epochs)
+[23:34:41] [INFO]     Epoch 1: Val Acc=0.5776
+[23:38:21] [INFO]     Epoch 2: Val Acc=0.6782
+[23:42:02] [INFO]     Epoch 3: Val Acc=0.7136
+[23:45:43] [INFO]     Epoch 4: Val Acc=0.7310
+[23:49:24] [INFO]     Epoch 5: Val Acc=0.7474
+[23:53:05] [INFO]     Epoch 6: Val Acc=0.7650
+[23:56:46] [INFO]     Epoch 7: Val Acc=0.7726
+[00:00:27] [INFO]     Epoch 8: Val Acc=0.7824
+[00:04:09] [INFO]     Epoch 9: Val Acc=0.7840
+[00:07:50] [INFO]     Epoch 10: Val Acc=0.7878
+[00:11:32] [INFO]     Epoch 11: Val Acc=0.7856
+[00:15:14] [INFO]     Epoch 12: Val Acc=0.7908
+[00:15:14] [INFO]     Best val acc: 0.7908
+[00:15:27] [INFO]   Seed 430: Test Acc=0.7833

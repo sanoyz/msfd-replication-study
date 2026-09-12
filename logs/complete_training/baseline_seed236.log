@@ -1,0 +1,26 @@
+[21:06:39] [INFO] 
+Training No-Distillation Baseline 'baseline_seed236' (12 epochs)
+[21:08:04] [INFO] Epoch 1: Loss=4.4538, Train Acc=0.0748, Val Acc=0.2026, Val F1=0.1506
+[21:08:04] [INFO] [OK] New best baseline (baseline_seed236): 0.2026
+[21:09:28] [INFO] Epoch 2: Loss=2.9712, Train Acc=0.3243, Val Acc=0.5362, Val F1=0.5144
+[21:09:28] [INFO] [OK] New best baseline (baseline_seed236): 0.5362
+[21:10:53] [INFO] Epoch 3: Loss=2.1579, Train Acc=0.4904, Val Acc=0.6380, Val F1=0.6280
+[21:10:53] [INFO] [OK] New best baseline (baseline_seed236): 0.6380
+[21:12:19] [INFO] Epoch 4: Loss=1.8323, Train Acc=0.5772, Val Acc=0.6890, Val F1=0.6838
+[21:12:19] [INFO] [OK] New best baseline (baseline_seed236): 0.6890
+[21:13:46] [INFO] Epoch 5: Loss=1.6620, Train Acc=0.6184, Val Acc=0.7196, Val F1=0.7162
+[21:13:46] [INFO] [OK] New best baseline (baseline_seed236): 0.7196
+[21:15:13] [INFO] Epoch 6: Loss=1.5613, Train Acc=0.6499, Val Acc=0.7374, Val F1=0.7320
+[21:15:13] [INFO] [OK] New best baseline (baseline_seed236): 0.7374
+[21:16:39] [INFO] Epoch 7: Loss=1.4715, Train Acc=0.6753, Val Acc=0.7510, Val F1=0.7488
+[21:16:39] [INFO] [OK] New best baseline (baseline_seed236): 0.7510
+[21:18:05] [INFO] Epoch 8: Loss=1.4202, Train Acc=0.6913, Val Acc=0.7514, Val F1=0.7487
+[21:18:05] [INFO] [OK] New best baseline (baseline_seed236): 0.7514
+[21:19:31] [INFO] Epoch 9: Loss=1.3995, Train Acc=0.7020, Val Acc=0.7664, Val F1=0.7648
+[21:19:31] [INFO] [OK] New best baseline (baseline_seed236): 0.7664
+[21:20:57] [INFO] Epoch 10: Loss=1.3371, Train Acc=0.7156, Val Acc=0.7760, Val F1=0.7752
+[21:20:57] [INFO] [OK] New best baseline (baseline_seed236): 0.7760
+[21:22:23] [INFO] Epoch 11: Loss=1.3091, Train Acc=0.7260, Val Acc=0.7748, Val F1=0.7734
+[21:23:49] [INFO] Epoch 12: Loss=1.2880, Train Acc=0.7333, Val Acc=0.7798, Val F1=0.7781
+[21:23:49] [INFO] [OK] New best baseline (baseline_seed236): 0.7798
+[21:23:50] [INFO] [OK] Baseline (baseline_seed236) best accuracy: 0.7798
