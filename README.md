@@ -186,12 +186,7 @@ msfd-replication-study/
 ├── complete_training/
 └── kd_sweep/
 ```
-**Note on the two code modules.** The repository contains two code trees, each corresponding to one of the two experimental pipelines:
 
-- **`code/`** — the complete training pipeline (Pipeline 2): teacher training, feature caching, MSFD distillation, KD baseline, no-distillation baseline, deliberate practice, progressive distillation, evaluation, and figure generation.
-- **`Kd sweep/`** — the KD hyperparameter sweep (Pipeline 1): a self-contained module that loads the pre-trained teacher, runs the 4×3 grid over temperature and CE weight, selects the best configuration by validation accuracy only, and exports the winning hyperparameters that Pipeline 2 then consumes.
-
-They share the same design (same `config.py`, `logger.py`, `utils.py`, `data_loader.py`, `models.py`, `training.py`, `distillation.py` structure) but are kept separate because they are run independently, at different times, and produce different logs and results directories. The folder name is spelled `Kd sweep` (with a space and lower-case "d") exactly as it appears on disk; if you prefer to rename it to `kd_sweep` for consistency, do so in the repository, then update the tree above.
 ---
 
 ## Installation
