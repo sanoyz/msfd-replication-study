@@ -1,0 +1,41 @@
+# =============================================================================
+# ReScience C metadata
+# =============================================================================
+
+title: "[Re] A Replication Study of Multi-Headed Synthetic Feature Distillation: When a Properly Tuned Baseline Wins"
+
+authors:
+  - name: "Yonas Zewdie"
+    orcid: "0009-0003-6037-9876"
+
+affiliations:
+  - name: "Gage University College"
+    country: "Ethiopia"
+
+dates:
+  - created: "2026-09-13"
+  - updated: "2026-09-13"
+
+domains:
+  - "Machine Learning"
+  - "Neural Networks"
+  - "Computer Vision"
+  - "Model Compression"
+
+keywords:
+  - "knowledge distillation"
+  - "replication study"
+  - "reproducibility"
+  - "feature distillation"
+  - "CIFAR-100"
+  - "model compression"
+  - "statistical significance testing"
+  - "edge AI"
+
+code:
+  - url: "https://github.com/sanoyz/msfd-replication-study"
+    doi: ""
+
+data:
+  - url: ""
+    doi: ""
