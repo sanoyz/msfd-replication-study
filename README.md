@@ -121,50 +121,77 @@ bash scripts/run_all.sh
 
 ```
 msfd-replication-study/
-├── README.md                  # this file
-├── metadata.yaml              # ReScience C metadata
-├── article.pdf                # the paper PDF
-├── requirements.txt           # Python dependencies (pinned)
-├── .gitignore                 # ignores large files
+├── README.md # this file
+├── metadata.yaml # ReScience C metadata
+├── article.pdf # the paper PDF
+├── requirements.txt # Python dependencies (pinned)
+├── .gitignore # ignores large files
 │
-├── code/                      # all executable code
-│   ├── config.py              # configuration dataclass
-│   ├── logger.py              # logging utilities
-│   ├── utils.py               # seeding, cleanup, stats, checkpointing
-│   ├── data_loader.py         # CIFAR-100 loading with split validation
-│   ├── models.py              # teacher and student architectures
-│   ├── training.py            # generic training (teacher, baseline)
-│   ├── distillation.py        # MSFD + standard KD + feature cache
-│   ├── deliberate_practice.py # hard example mining
-│   ├── progressive.py         # progressive distillation
-│   ├── evaluation.py          # per-class analysis, confusion matrix
-│   ├── head_ablations.py      # head ablation study
-│   ├── sweep.py               # KD hyperparameter sweep
-│   ├── train_teacher.py       # CLI: teacher training
-│   ├── train_msfd.py          # CLI: MSFD student
-│   ├── train_standard_kd.py   # CLI: tuned KD
-│   ├── train_baseline.py      # CLI: no-distillation baseline
-│   └── run_all.py             # complete training pipeline
+├── code/ # Pipeline 2: complete training code
+│ ├── init.py
+│ ├── config.py # configuration dataclass
+│ ├── logger.py # logging utilities
+│ ├── utils.py # seeding, cleanup, stats, checkpointing
+│ ├── data_loader.py # CIFAR-100 loading with split validation
+│ ├── models.py # teacher and student architectures
+│ ├── training.py # generic training (teacher, baseline)
+│ ├── distillation.py # MSFD + standard KD + feature cache
+│ ├── deliberate_practice.py # hard example mining
+│ ├── progressive.py # progressive distillation
+│ ├── evaluation.py # per-class analysis, confusion matrix
+│ ├── head_ablations.py # head ablation study
+│ ├── sweep.py # KD hyperparameter sweep helpers
+│ ├── train_teacher.py # CLI: teacher training
+│ ├── train_msfd.py # CLI: MSFD student
+│ ├── train_standard_kd.py # CLI: tuned KD
+│ ├── train_baseline.py # CLI: no-distillation baseline
+│ └── run_all.py # complete training pipeline entry point
 │
-├── configs/                   # configuration files
-│   ├── default.yaml           # main config (complete training)
-│   ├── teacher.yaml           # teacher-specific config
-│   └── kd_sweep.yaml          # KD sweep config
+├── Kd sweep/ # Pipeline 1: KD sweep code (separate module)
+│ ├── init.py
+│ ├── config.py
+│ ├── logger.py
+│ ├── utils.py
+│ ├── data_loader.py
+│ ├── models.py
+│ ├── training.py
+│ ├── distillation.py
+│ ├── sweep.py # sweep logic
+│ └── sweep_cli.py # CLI: KD sweep entry point
 │
-├── scripts/                   # shell scripts for reproducibility
-│   ├── run_complete_training.sh
-│   ├── run_kd_sweep.sh
-│   └── run_all.sh
+├── config/ # configuration files
+│ ├── default.yaml # main config (complete training)
+│ ├── teacher.yaml # teacher-specific config
+│ └── kd_sweep.yaml # KD sweep config
 │
-├── logs/                      # training logs
-│   ├── complete_training/
-│   └── kd_sweep/
+├── scripts/ # shell scripts for reproducibility
+│ ├── run_complete_training.sh
+│ └── run_kd_sweep.sh
 │
-└── results/                   # CSV outputs and figures
-    ├── complete_training/
-    └── kd_sweep/
+├── logs/ # training logs
+│ ├── complete_training/
+│ │ ├── teacher_training.log
+│ │ ├── cache_build.log
+│ │ ├── msfd_seed{42,139,236,333,430}.log
+│ │ ├── kd_seed{42,139,236,333,430}.log
+│ │ ├── baseline_seed{42,139,236,333,430}.log
+│ │ ├── practice.log
+│ │ └── progressive_distillation.log
+│ │
+│ └── kd_sweep/
+│ ├── sweep_T1.0_a0.3.log
+│ └── sweep_summary.log
+│
+└── results/ # CSV outputs and figures
+├── complete_training/
+└── kd_sweep/
 ```
+**Note on the two code modules.** The repository contains two code trees, each corresponding to one of the two experimental pipelines:
 
+- **`code/`** — the complete training pipeline (Pipeline 2): teacher training, feature caching, MSFD distillation, KD baseline, no-distillation baseline, deliberate practice, progressive distillation, evaluation, and figure generation.
+- **`Kd sweep/`** — the KD hyperparameter sweep (Pipeline 1): a self-contained module that loads the pre-trained teacher, runs the 4×3 grid over temperature and CE weight, selects the best configuration by validation accuracy only, and exports the winning hyperparameters that Pipeline 2 then consumes.
+
+They share the same design (same `config.py`, `logger.py`, `utils.py`, `data_loader.py`, `models.py`, `training.py`, `distillation.py` structure) but are kept separate because they are run independently, at different times, and produce different logs and results directories. The folder name is spelled `Kd sweep` (with a space and lower-case "d") exactly as it appears on disk; if you prefer to rename it to `kd_sweep` for consistency, do so in the repository, then update the tree above.
 ---
 
 ## Installation
